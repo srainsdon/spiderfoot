@@ -146,9 +146,7 @@ if __name__ == '__main__':
     cherrypy.config.update({
         'server.socket_host': sfConfig['__webaddr'],
         'server.socket_port': sfConfig['__webport'],
-        'log.screen': False,
-        'log.access_file': 'access.log',
-        'log.error_file': 'error.log'
+        'log.access_file': 'access.log'
     })
 
     # Disable auto-reloading of content
